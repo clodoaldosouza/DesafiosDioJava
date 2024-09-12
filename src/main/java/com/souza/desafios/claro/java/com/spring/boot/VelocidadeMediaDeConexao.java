@@ -2,7 +2,7 @@ package com.souza.desafios.claro.java.com.spring.boot;
 
 import java.util.Scanner;
 
-public class VelocidadeMédiaDeConexao {
+public class VelocidadeMediaDeConexao {
 
     // Função para calcular a velocidade média de conexão de internet
     public static double calcularVelocidadeMedia(String[] velocidades) {
