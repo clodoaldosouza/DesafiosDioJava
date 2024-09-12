@@ -49,7 +49,7 @@ Saída
 -----
 
 `` `String` `` contendo todos os funcionários com seus novos salários, cada um em uma linha no formato:
-`"Nome: X -  Novo Salario: Y".` Onde, X representa o nome e Y o salário atualizado com duas casas decimais.
+`"Nome: X -  Novo Salario: Y".` Onde, X representa o nome e Y o salário atualizado com duas casas decimais.
 
 Exemplos
 --------
