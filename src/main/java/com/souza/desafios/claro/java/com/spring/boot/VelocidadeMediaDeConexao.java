@@ -13,8 +13,7 @@ public class VelocidadeMediaDeConexao {
             total += Integer.parseInt(velocidade);
         }
 
-        double media = (double) total / velocidades.length;
-        return media;
+        return (double) total / velocidades.length;
     }
 
     public static void main(String[] args) {
