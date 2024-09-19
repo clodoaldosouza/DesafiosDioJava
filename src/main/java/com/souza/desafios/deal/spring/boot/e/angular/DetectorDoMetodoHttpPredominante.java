@@ -4,17 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class DetectorDoMetodoHttpPredominante {
-
+public class HttpMethodCounter {
     public static String findMostFrequentMethod(String input) {
         String[] methods = input.split(",");
         Map<String, Integer> methodCounts = new HashMap<>();
 
         // TODO: Contar a ocorrência de cada método HTTP e armazenar no mapa 'methodCounts'
-        for (String method : methods) {
-            String trimmedMethod = method.trim().toUpperCase();
-            methodCounts.put(trimmedMethod, methodCounts.getOrDefault(trimmedMethod, 0) + 1);
-        }
+
 
         // Encontrar o metodo com a maior contagem
         String mostFrequentMethod = "";

@@ -2,8 +2,7 @@ package com.souza.desafios.deal.spring.boot.e.angular;
 
 import java.util.*;
 
-public class GerenciamentoDeFuncionarios {
-
+public class GerenciamentoFuncionarios {
     static class Funcionario {
         int id;
         String nome;
@@ -35,9 +34,10 @@ public class GerenciamentoDeFuncionarios {
             String cargo = scanner.nextLine();
 
             // TODO: Adicione funcionários à lista 'funcionarios':
-            funcionarios.add(new Funcionario(i + 1, nome, cargo));
+
 
         }
+
 
         Collections.sort(funcionarios, Comparator.comparingInt(f -> f.id));
         for (Funcionario f : funcionarios) {

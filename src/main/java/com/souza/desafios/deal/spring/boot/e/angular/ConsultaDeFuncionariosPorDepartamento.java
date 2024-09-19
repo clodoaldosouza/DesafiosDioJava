@@ -1,9 +1,12 @@
 package com.souza.desafios.deal.spring.boot.e.angular;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
-public class ConsultaDeFuncionariosPorDepartamento {
-
+public class ConsultaFuncionarios {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,11 +25,10 @@ public class ConsultaDeFuncionariosPorDepartamento {
             // TODO: Adicionar o funcionário ao departamento correspondente
             // Use o método computeIfAbsent para obter a lista do departamento e adicionar o funcionário a essa lista.
             // Dica: departamentoFuncionarios.computeIfAbsent(departamento, k -> new LinkedList<>()).add(new Funcionario(nome, salario));
-            departamentoFuncionarios
-                    .computeIfAbsent(departamento, k -> new LinkedList<>())
-                    .add(new Funcionario(nome, salario));
+
 
         }
+
 
         String departamentoConsulta = scanner.nextLine();
 

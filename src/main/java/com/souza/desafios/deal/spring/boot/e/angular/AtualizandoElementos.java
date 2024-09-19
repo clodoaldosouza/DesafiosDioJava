@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class AtualizandoElementos {
+public class Table {
 
     private Map<Integer, String> table;
 
-    public AtualizandoElementos() {
+    public Table() {
         this.table = new HashMap<>();
         // Inserindo dados para exemplo
         table.put(1, "Alice");
@@ -27,13 +27,8 @@ public class AtualizandoElementos {
     // DICA: O método update deve verificar se a chave (key) existe na tabela.
     // Se existir, atualize o valor associado a essa chave com newValue.
     // Caso contrário, exiba a mensagem "ID nao encontrado.".
-    public void update(int key, String newValue) {
-        if (table.containsKey(key)) {
-            table.put(key, newValue);
-        } else {
-            System.out.println("ID nao encontrado.");
-        }
-    }
+
+
 
     public void display() {
         for (String name : table.values()) {
@@ -43,7 +38,7 @@ public class AtualizandoElementos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        AtualizandoElementos table = new AtualizandoElementos();
+        Table table = new Table();
 
         int n = Integer.parseInt(scanner.nextLine().trim());
 

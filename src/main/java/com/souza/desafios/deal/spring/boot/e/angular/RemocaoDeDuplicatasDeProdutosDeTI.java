@@ -2,8 +2,8 @@ package com.souza.desafios.deal.spring.boot.e.angular;
 
 import java.util.*;
 
-public class RemocaoDeDuplicatasDeProdutosDeTI {
 
+public class RemoverDuplicados {
     public static List<String> removerDuplicados(List<String> produtos) {
         Set<String> vistos = new HashSet<>();
 
@@ -29,19 +29,18 @@ public class RemocaoDeDuplicatasDeProdutosDeTI {
 
         List<String> produtos = new ArrayList<>();
 
+
         for (int i = 0; i < n; i++) {
             String produto = scanner.nextLine();
             produtos.add(produto);
         }
 
         // TODO: Chamar a função removerDuplicados e armazenar o resultado:
-        List<String> produtosUnicos = removerDuplicados(produtos);
+
 
         System.out.println("Produtos unicos:");
         // TODO: Implemente o loop for para imprimir cada produto na lista produtosUnicos:
-        for (String produtoUnico : produtosUnicos) {
-            System.out.println(produtoUnico);
-        }
+
 
         scanner.close();
     }

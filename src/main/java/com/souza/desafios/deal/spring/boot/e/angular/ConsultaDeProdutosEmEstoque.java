@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class ConsultaDeProdutosEmEstoque {
+public class GerenciadorEstoque {
 
     // Map de produtos com suas quantidades
     private static final Map<String, Integer> produtosEstoque = new HashMap<>();
@@ -24,17 +24,14 @@ public class ConsultaDeProdutosEmEstoque {
         // 2. Se estiver, verifique se a quantidade é maior que zero e retorne "Produto disponivel: X em estoque."
         // 3. Se a quantidade for zero, retorne "Produto indisponivel: X em estoque."
         // 4. Se o produto não estiver presente no HashMap, retorne "Produto nao encontrado."
-        if (!produtosEstoque.containsKey(nomeProduto)) {
-            return "Produto nao encontrado.";
-        }
-        int quantidade = produtosEstoque.get(nomeProduto);
-        return (quantidade > 0) ?
-                "Produto disponivel: " + quantidade + " em estoque." :
-                "Produto indisponivel: " + quantidade + " em estoque.";
+
+
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+
         String nomeProduto = scanner.nextLine().trim();
 
         // Consultando o produto e exibindo o resultado

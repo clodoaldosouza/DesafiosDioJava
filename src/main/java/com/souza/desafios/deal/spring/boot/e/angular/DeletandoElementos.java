@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class DeletandoElementos {
+public class Table {
 
     private Map<Integer, String> table;
 
-    public DeletandoElementos() {
+    public Table() {
         this.table = new HashMap<>();
     }
 
@@ -17,9 +17,8 @@ public class DeletandoElementos {
     }
 
     // TODO: Método para deletar um elemento da tabela usando sua chave (ID)
-    public void delete(int id) {
-        table.remove(id);
-    }
+
+
 
     public void display() {
         for (String name : table.values()) {
@@ -29,7 +28,7 @@ public class DeletandoElementos {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DeletandoElementos table = new DeletandoElementos();
+        Table table = new Table();
 
         // Inserindo dados para exemplo
         table.insert(1, "Alice");
@@ -38,6 +37,7 @@ public class DeletandoElementos {
         table.insert(4, "Paula");
         table.insert(5, "Gabriela");
         table.insert(6, "Luiza");
+
 
         int n = scanner.nextInt();
 

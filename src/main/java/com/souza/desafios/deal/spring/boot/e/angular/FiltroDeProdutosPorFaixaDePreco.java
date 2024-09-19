@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class FiltroDeProdutosPorFaixaDePreco {
-
+public class FiltroProdutos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,13 +30,13 @@ public class FiltroDeProdutosPorFaixaDePreco {
         double precoMax = scanner.nextDouble();
 
         // TODO: Filtre os produtos pela faixa de preco usando Streams:
-        List<Produto> produtosFiltrados = produtos.stream()
-                .filter(p -> p.preco >= precoMin && p.preco <= precoMax)
-                .collect(Collectors.toList());
+
+
 
         for (Produto p : produtosFiltrados) {
             System.out.printf("Nome: %s - Preco: %.2f\n", p.nome, p.preco);
         }
+
         scanner.close();
     }
 }
