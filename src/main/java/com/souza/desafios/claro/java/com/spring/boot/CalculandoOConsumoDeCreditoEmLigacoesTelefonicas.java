@@ -2,7 +2,7 @@ package com.souza.desafios.claro.java.com.spring.boot;
 
 import java.util.Scanner;
 
-public class CalculandoOConsumoDeCreditoEmLigacoesTelefonicas {
+public class CalculadoraCredito {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,8 +21,6 @@ public class CalculandoOConsumoDeCreditoEmLigacoesTelefonicas {
                 double valorPorMinuto = Double.parseDouble(dadosLigacao[2].trim());
 
                 // TODO: Calcule o custo da ligação
-                double custoLigacao = duracao * valorPorMinuto;
-                totalCredito += custoLigacao;
             }
 
             // Formata o resultado com duas casas decimais e imprime

@@ -2,7 +2,7 @@ package com.souza.desafios.claro.java.com.spring.boot;
 
 import java.util.Scanner;
 
-public class VerificacaoDeContratacaoDeComboCompleto {
+public class Main {
 
     // Função para verificar se o cliente contratou um combo completo
     public static String verificarComboCompleto(String[] servicosContratados) {
@@ -13,17 +13,10 @@ public class VerificacaoDeContratacaoDeComboCompleto {
 
         // TODO: Itere sobre os serviços contratados
         for (String servico : servicosContratados) {
-            if (servico.equalsIgnoreCase("movel")) {
-                movelContratado = true;
-            } else if (servico.equalsIgnoreCase("tv")) {
-                tvContratada = true;
-            } else if (servico.equalsIgnoreCase("banda larga")) {
-                bandaLargaContratada = true;
-            }
         }
 
         // TODO: Verifique se todos os serviços foram contratados
-        if (movelContratado && tvContratada && bandaLargaContratada) {
+        if () {
             return "Combo Completo";
         } else {
             return "Combo Incompleto";

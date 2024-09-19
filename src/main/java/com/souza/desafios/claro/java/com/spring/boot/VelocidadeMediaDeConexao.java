@@ -2,18 +2,14 @@ package com.souza.desafios.claro.java.com.spring.boot;
 
 import java.util.Scanner;
 
-public class VelocidadeMediaDeConexao {
+public class Main {
 
     // Função para calcular a velocidade média de conexão de internet
     public static double calcularVelocidadeMedia(String[] velocidades) {
         int total = 0;
 
         // TODO: Some todas as velocidades registradas e calcule a média
-        for (String velocidade : velocidades) {
-            total += Integer.parseInt(velocidade);
-        }
-
-        return (double) total / velocidades.length;
+        return
     }
 
     public static void main(String[] args) {
@@ -29,7 +25,7 @@ public class VelocidadeMediaDeConexao {
         double velocidadeMedia = calcularVelocidadeMedia(velocidades);
 
         // Exibindo a velocidade média de conexão
-        System.out.println((int) velocidadeMedia + " Mbps");
+        System.out.println((int)velocidadeMedia + " Mbps");
 
         scanner.close();
     }

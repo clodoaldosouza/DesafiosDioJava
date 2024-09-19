@@ -38,13 +38,6 @@ class ComboServicos {
 
         double desconto;
         // TODO: Aplique o desconto correspondente à quantidade de serviços contratados
-        if (servicosContratados == 1) {
-            desconto = desconto1;
-        } else if (servicosContratados == 2) {
-            desconto = desconto2;
-        } else {
-            desconto = desconto3;
-        }
 
         // Calcula o valor total com desconto
         double valorComDesconto = Arrays.stream(servicos)
@@ -53,15 +46,12 @@ class ComboServicos {
                 .sum() * (1 - desconto / 100);
 
         // TODO: Aplique desconto adicional se todos os três serviços foram contratados
-        if (servicosContratados == 3) {
-            valorComDesconto -= descontoAdicional;
-        }
 
         return valorComDesconto;
     }
 }
 
-public class CalculoDeDescontoProgressivoEmCombo {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
