@@ -1,10 +1,8 @@
 package com.souza.desafios.formacao.java.developer;
 // Abaixo segue um exemplo de código que você pode ou não utilizar
-
 import java.util.Scanner;
 
-public class MultiplicacaoSimples {
-
+public class Problem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -12,9 +10,9 @@ public class MultiplicacaoSimples {
 
         A = sc.nextInt();
         B = sc.nextInt();
+        //TODO: Complete os espaços em branco com uma possível solução para o desafio
+        PROD =
 
-        PROD = A * B; //implemente o código que representa a multiplicação.
-        System.out.println("PROD = " + PROD);
-        sc.close();
+                System.out.println("PROD = " +     );
     }
 }

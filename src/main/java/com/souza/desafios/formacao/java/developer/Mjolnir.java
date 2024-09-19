@@ -1,24 +1,22 @@
 package com.souza.desafios.formacao.java.developer;
 // Abaixo segue um exemplo de código que você pode ou não utilizar
-
 import java.util.Scanner;
 
-public class Mjolnir {
-
-    public static void main(String[] args) {
+public class Problem {
+    public static void main(String[] args){
         Scanner leitor = new Scanner(System.in);
         int C = leitor.nextInt();
+        String nome;
+        int N;
 
-        for (int i = 0; i < C; i++) {
-            String nome = leitor.next();
-            int N = leitor.nextInt();
+// TODO: complete os espaços em branco com sua solução para o problema
 
-            if (nome.equals("Thor")) {
-                System.out.println("Y");
-            } else {
-                System.out.println("N");
-            }
+        for (int i = 0; i <     ; i++) {
+            nome = leitor.next();
+            N = leitor.nextInt();
+            if (nome.equals("Thor")) System.out.println(         );
+            else System.out.println(           );
         }
-        leitor.close();
     }
+
 }
