@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CalculoDeConsumoDeDadosMoveisTest {
 
     @Test
-    public void testCalcularConsumoTotal() {
+    public void deveCalcularDeConsumoDeDadosMoveisComDadosDoExemploDado1_retornarCorreto() {
         String[] consumoSemanal = {"2064", "4000", "2000", "3200"};
         int totalConsumo = CalculoDeConsumoDeDadosMoveis.calcularConsumoTotal(consumoSemanal);
         int mediaSemanal = CalculoDeConsumoDeDadosMoveis.calcularMediaSemanal(totalConsumo, 4);
@@ -18,7 +18,7 @@ class CalculoDeConsumoDeDadosMoveisTest {
     }
 
     @Test
-    public void testCalcularConsumoTotalOutro() {
+    public void deveCalcularDeConsumoDeDadosMoveisComDadosDoExemploDado2_retornarCorreto() {
         String[] consumoSemanal = {"5000", "4880", "4600", "6000"};
         int totalConsumo = CalculoDeConsumoDeDadosMoveis.calcularConsumoTotal(consumoSemanal);
         int mediaSemanal = CalculoDeConsumoDeDadosMoveis.calcularMediaSemanal(totalConsumo, 4);
@@ -29,7 +29,7 @@ class CalculoDeConsumoDeDadosMoveisTest {
     }
 
     @Test
-    public void testCalcularConsumoTotalOutro2() {
+    public void deveCalcularDeConsumoDeDadosMoveisComDadosDoExemploDado3_retornarCorreto() {
         String[] consumoSemanal = {"4000", "4456", "6000", "5000"};
         int totalConsumo = CalculoDeConsumoDeDadosMoveis.calcularConsumoTotal(consumoSemanal);
         int mediaSemanal = CalculoDeConsumoDeDadosMoveis.calcularMediaSemanal(totalConsumo, 4);
